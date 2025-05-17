@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Memories</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fff0f6;
+      color: #6a1b4d;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    .full-height {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #b71c1c;
+      font-weight: 700;
+      margin: 0;
+      text-shadow: 1px 1px 6px #f48fb1;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .photo-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(183, 28, 28, 0.2);
+      overflow: hidden;
+      cursor: default;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(183, 28, 28, 0.4);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 2px solid #f48fb1;
+    }
+
+    .caption {
+      padding: 15px;
+      font-size: 1.1rem;
+      text-align: center;
+      color: #6a1b4d;
+      font-style: italic;
+      font-weight: 600;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #b71c1c;
+    }
+
+    a img {
+      display: block;
+      margin: 10px auto;
+      max-width: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    a img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 1rem;
+      color: #880e4f;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .photo-card img {
+        height: 180px;
+      }
+      header h1 {
+        font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+    <div class="full-height">
+  <header>
+    <h1>Our Memories Together</h1>
+  </header>
+
+  <section class="gallery">
+    <div class="photo-card">
+      <img src="Screenshot 2025-05-16 125208.png" alt="you and me" />
+      <div class="caption">Our first selfie together</div>
+    </div>
+    <div class="photo-card">
+      <img src="Screenshot 2025-05-16 124905.png" alt="Us" />
+      <div class="caption">Our first valentines day together</div>
+    </div>
+    <div class="photo-card">
+      <img src="Screenshot 2025-05-16 124952.png" alt=" memories" />
+      <div class="caption">18-02-2025</div>
+    </div>
+    <div class="photo-card">
+      <img src="Screenshot 2025-05-16 125030.png" alt=" memories" />
+      <div class="caption">30-01-2025</div>
+    </div>
+    <div class="photo-card">
+      <img src="Screenshot 2025-05-16 125053.png" alt=" memories" />
+      <div class="caption">12-02-2025</div>
+    </div>
+    <div class="photo-card">
+      <img src="Screenshot 2025-05-16 125108.png" alt=" memories" />
+      <div class="caption">05-02-2025</div>
+    </div>
+    <div class="photo-card">
+        <img src="Screenshot 2025-05-16 125119.png" alt=" memories" />
+        <div class="caption">27-01-2025</div>
+      </div>
+    <div class="photo-card">
+        <img src="Screenshot 2025-05-16 124935.png" alt=" memories" />
+        <div class="caption">18-02-2025</div>
+      </div>
+    <div class="photo-card">
+        <img src="Screenshot 2025-05-16 133933.png" alt=" memories" />
+        <div class="caption">01-02-2025</div>
+      </div>
+    <h1>Maamaa!Click this giftbox for your birthday gift</h1>
+      <a href="gift.html">
+        <img src="download-removebg-preview.png" alt="Gift Box">
+      </a>

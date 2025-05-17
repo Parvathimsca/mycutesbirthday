@@ -1,0 +1,75 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Your Gift</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    img {
+      width: 150px;
+      margin-top: 100px;
+      cursor: pointer;
+    }
+    h1 {
+      margin-top: 50px;
+      color: #c71585;
+    }
+  </style>
+</head>
+<body>
+  <h1>Click the Gift to Reveal Your Surprise!</h1>
+  <a href="gift.html">
+    <img src="gift-box-18VxVD6-600-removebg-preview.png" alt="Gift Box">
+  </a>
+</body>
+</html>
+
+<!-- gift.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Are the Gift</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    h1 {
+      color: #d63384;
+      margin-top: 20px;
+    }
+    video {
+      margin-top: 30px;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>You Are the Gift You've Been Searching For 🎁</h1>
+  <video id="camera" autoplay playsinline></video>
+
+  <script>
+    const video = document.getElementById('camera');
+
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => {
+        video.srcObject = stream;
+      })
+      .catch(err => {
+        alert('Could not access the camera.');
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
